@@ -10,12 +10,18 @@ export default function App() {
         return (
             <Card
                 key={item.id}//important because otherwise it will give warning in the console about the uniqness of element because we have used mapping so it is imp to make this argument
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
+                // img={item.coverImg}
+                // rating={item.stats.rating}
+                // reviewCount={item.stats.reviewCount}
+                // location={item.location}
+                // title={item.title}
+                // price={item.price}
+                // openSpots={item.openSpots}
+                // instead of above approach we can pass our data in a object
+                item={item}
+                // or we can use below method that is using spread operator 
+                // By that we wont need to use prop.item.img we can directly use prop.img
+                // {...item}               
             />
         )
     })        
