@@ -20,3 +20,21 @@ when React re-renders the component).
 Unchanging.
  Props are immutable. props may be mutable but u should not change the as it will give warning to understand thi u pass a parameter in function and u have hard coded that argument in the function so it will not make a sense .
  State is mutable.
+
+ 5. You have 2 options for what you can pass in to a
+   state setter function (e.g. `setCount`). What are they?
+   
+a. New value of state (setCount(42))
+b. Callback function - whatever the callback function 
+   returns === new value of state
+
+
+6. When would you want to pass the first option (from answer
+   above) to the state setter function?
+Whenever you don't need the previous value of state to determine
+what the new value of state should be.
+
+
+7. When would you want to pass the second option (from answer
+   above) to the state setter function?
+Whenever you DO need the previous value to determine the new value
