@@ -28,7 +28,7 @@ export default function App() {
         <Box 
             key={square.id} 
             id={square.id}
-            on={square.on} 
+            // on={square.on} 
             toggle={toggle}
         />
     ))
