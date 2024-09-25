@@ -2,15 +2,24 @@ import React from "react"
 
 export default function Form() {
     const [formData, setFormData] = React.useState(
-        {firstName: "", lastName: "", email: ""}
+        {
+            firstName: "", 
+            lastName: "", 
+            email: "", 
+            comments: "", 
+            isFriendly: true,
+            employment: ""
+        }
     )
     // by using object as above we ca use one state to render the different input
+    console.log(formData.employment)
     
     function handleChange(event) {
+        const {name, value, type, checked} = event.target
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
-                [event.target.name]: event.target.value
+                [name]: type === "checkbox" ? checked : value
             }
         })
     }
