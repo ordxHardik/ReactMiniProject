@@ -104,3 +104,5 @@ export default function Form() {
     )
 }
 
+
+    // by using object as above we ca use 
