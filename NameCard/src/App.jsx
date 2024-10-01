@@ -84,7 +84,7 @@ function App() {
           }}
           onMouseEnter={() => setIsLinkedInHovered(true)}
           onMouseLeave={() => setIsLinkedInHovered(false)}
-          onClick={() => window.open('https://www.linkedin.com', '_blank')}
+          onClick={() => window.open('https://www.linkedin.com/in/hardikjain05/', '_blank')}
         >
           LinkedIn
         </button>
@@ -97,7 +97,7 @@ function App() {
           }}
           onMouseEnter={() => setIsGitHubHovered(true)}
           onMouseLeave={() => setIsGitHubHovered(false)}
-          onClick={() => window.open('https://www.github.com', '_blank')}
+          onClick={() => window.open('https://github.com/ordxHardik', '_blank')}
         >
           GitHub
         </button>
