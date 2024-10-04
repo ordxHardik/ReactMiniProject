@@ -19,9 +19,10 @@ export default function App() {
 
     React.useEffect(function() {
         console.log("Effect ran")
-        fetch("https://swapi.dev/api/people/1")
+        fetch(`https://swapi.dev/api/people/${count}`) //with every count incremented the state will be changed and the new api request would be made and key with same id would be displayed
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => console.log(data)
+            .then(data =>setStarWarsData(data)))
     }, [0])  // [0] compared to [0] this [] is a dependency array that tell useEffect when to run 
 
     // 
